@@ -12,6 +12,14 @@ class Artist
     @@all << self
   end 
   
+<<<<<<< HEAD
+=======
+ 
+  
+  
+
+  
+>>>>>>> 3ab31ff8dd74671dec8a0edd77afa936a76b5b0e
   def initialize(specific_name)
     @name = specific_name
     @songs = []
@@ -24,6 +32,7 @@ class Artist
 
   
   def self.find_or_create_by_name(some_name)
+<<<<<<< HEAD
     self.find(some_name) || self.create(some_name)
   end
   
@@ -33,6 +42,14 @@ class Artist
   
   def self.create(name)
     self.new(name).tap {|artist| artist.save}
+=======
+    if @@all.any?{|x| x.name == some_name}
+      x
+    else
+      new_artist = Artist.new(some_name)
+      new_artist
+    end 
+>>>>>>> 3ab31ff8dd74671dec8a0edd77afa936a76b5b0e
   end 
       
 

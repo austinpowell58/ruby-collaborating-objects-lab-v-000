@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 require "pry"
 class Song
   
@@ -5,11 +6,17 @@ class Song
   
   attr_accessor :name, :artist, :songs
   
+=======
+class Song
+  
+  attr_accessor :name, :artist
+>>>>>>> 3ab31ff8dd74671dec8a0edd77afa936a76b5b0e
   
   def initialize(song_name)
     @name = song_name
   end 
   
+<<<<<<< HEAD
   def save
     @@all << self
   end 
@@ -30,6 +37,8 @@ class Song
   end
     
 
+=======
+>>>>>>> 3ab31ff8dd74671dec8a0edd77afa936a76b5b0e
   
   
 
